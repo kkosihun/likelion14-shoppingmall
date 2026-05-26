@@ -51,14 +51,10 @@ const ButtonGroup = styled.div`
 `;
 
 
-
-
-
-
 export default function Header(){
 
     const {pathname} = useLocation(); // 현재 페이지 경로 불러오기
-    const navigate = useNavigate();
+    const navigate = useNavigate(); //코드로 페이지 이동시키기
     const buttonName = "상품등록";
     const {type, id} = useParams(); //상세 페이지의 id 가져오기
     const { setShowDeleteModal } = useProduct();

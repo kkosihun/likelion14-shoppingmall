@@ -47,5 +47,3 @@ export const deleteItem = async (type, id) => {
   const res = await api.delete(`/${type}/${id}`);
   return res.data;
 };
-
-

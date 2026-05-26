@@ -5,10 +5,8 @@ import { useProduct } from "../../../pages/Main/ProductDetail/ProductContext.jsx
 const ProductCard = styled.div`
     display: flex;
     width: 181px;
-    height: 237px;
     flex-direction: column;
     cursor: pointer;
-    
 `;
 
 const ProductImage = styled.img`
@@ -25,7 +23,7 @@ const ProductName = styled.p`
     font-size: 11px;
     font-weight: 400;
     line-height: normal;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
     align-self: stretch;
 `;
 
@@ -37,7 +35,7 @@ const ProductPrice = styled.p`
     font-size: 11px;
     font-weight: 400;
     line-height: normal;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
     align-self: stretch;
 `;
 
@@ -47,32 +45,16 @@ const ProductReviews = styled.p`
     font-size: 11px;
     font-weight: 400;
     line-height: normal;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
     align-self: stretch;
 `;
 
-
-// export default function ItemCard({ itemId, image, name, price, reviewCount }) {
-//     const navigate = useNavigate();
-//     const { setSelectedProduct } = useProduct();
-
-//     return (
-//         <ProductCard onClick={() => {
-//             navigate(`/item/${itemId}`);   // 이거 하나면 끝!
-//         }}>
-//             <ProductImage src={image} alt={name} />
-//             <ProductName>{name}</ProductName>
-//             <ProductPrice>{price}</ProductPrice>
-//             <ProductReviews>리뷰 {reviewCount}</ProductReviews>
-//         </ProductCard>
-//     );
-// }
 
 export default function ItemCard({ itemId, itemType, image, name, price, reviewCount }) {
     const navigate = useNavigate();
     return (
         <ProductCard onClick={() => {
-            navigate(`/item/${itemType}/${itemId}`);   // 👈 itemType 사용
+            navigate(`/item/${itemType}/${itemId}`);   //itemType 사용
         }}>
             <ProductImage src={image} alt={name} />
             <ProductName>{name}</ProductName>

@@ -2,7 +2,6 @@ import Filter from "../../components/common/filter/Filter";
 import Sorting from "../../components/common/sorting/Sort";
 import styled from "styled-components";
 
-
 import { useEffect, useState } from "react";
 import { getItems } from "../../api/shop";
 import ItemCard from "../../components/common/images/ItemCard";

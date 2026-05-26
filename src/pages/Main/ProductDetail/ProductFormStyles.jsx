@@ -4,8 +4,15 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding-top: 115px;
     padding-right: 194px;
+    align-items: flex-start;
+`;
+
+export const LeftSection = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 115px;
 `;
 
 export const ImageInsert = styled.div`
@@ -37,10 +44,11 @@ export const TotalFrame = styled.div`
     border: 1px solid #E0E0E0;
     padding: 27px 33px;
     border-radius: 25px;
+    margin-top: 37px;
 `;
 
 export const NewFrame = styled.div`
-    width: 247px;
+    width: 100%;
 `;
 
 export const Select = styled.div`
